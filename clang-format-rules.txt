@@ -1,0 +1,173 @@
+# Some c++ standards for code formatting.
+# These are customized format rules that we consider useful for each c++ code.
+
+# The extra indent or outdent of access modifiers
+AccessModifierOffset: -4
+
+# Align parameters on the open bracket
+AlignAfterOpenBracket: true
+
+# Consecutive assigments aligned based on the operators
+AlignConsecutiveAssignments: true
+
+# Align consecutive declarations based on the type
+AlignConsecutiveDeclarations: true
+
+# Align escaped newlines as far left as possible
+AlignEscapedNewlinesLeft: true
+
+# Align horizontally operands of binary and ternary expressions
+AlignOperands:   true
+
+# Align trailing comments
+AlignTrailingComments: true
+
+# Allow putting all parameters of a function declaration onto the next line
+AllowAllParametersOfDeclarationOnNextLine: true
+
+# Disallows contracting simple braced statements to a single line
+AllowShortBlocksOnASingleLine: false
+
+# Short case labels wont't be contracted to a single line
+AllowShortCaseLabelsOnASingleLine: false
+
+# Question show all short functions be inline (# Merge all inline functions fitting on a single line)
+AllowShortFunctionsOnASingleLine: None
+
+# Cannot be put on a single line (brackets)
+AllowShortIfStatementsOnASingleLine: false
+
+#Cannot be put on a single line (brackets)
+AllowShortLoopsOnASingleLine: false
+
+#AlwaysBreakAfterDefinitionReturnType: None
+#AlwaysBreakBeforeMultilineStrings: true
+
+# Break after the template<...> of a template declaration
+AlwaysBreakTemplateDeclarations: true
+
+# Configure each individual brace in BraceWrapping
+BreakBeforeBraces: Custom
+
+# Control of individual brace wrapping cases
+BraceWrapping: {
+    AfterClass: 'true'
+    AfterControlStatement: 'true'
+    AfterEnum : 'true'
+    AfterFunction : 'true'
+    AfterNamespace : 'true'
+    AfterStruct : 'true'
+    AfterUnion : 'true'
+    BeforeCatch : 'true'
+    BeforeElse : 'true'
+    IndentBraces : 'false'
+}
+
+# Don't put binary operators on a new line
+BreakBeforeBinaryOperators: None
+
+# Don't put ternary operators on a new line
+BreakBeforeTernaryOperators: false
+
+# Question : it does not feel right to put comma on another line, right?
+BreakConstructorInitializersBeforeComma: true
+
+# Length of a line
+ColumnLimit: 100
+
+# Indent for the constructor initializers, same as the normal indent width
+ConstructorInitializerIndentWidth: 4
+
+# Indent width for line continuations
+ContinuationIndentWidth: 4
+
+# Format braced lists as best suited for C++11 braced lists
+Cpp11BracedListStyle: true
+
+# Analyze the formatted file for the most common alignment of & and *
+# DerivePointerAlignment: true
+
+# Disables formatting completely
+DisableFormat: false
+
+# Macros which would be interpreted as foreach
+ForEachMacros: [ foreach, Q_FOREACH, BOOST_FOREACH ]
+
+# Indent case labels 1 level from the switch statement
+IndentCaseLabels: true
+
+# Normal indent width
+IndentWidth: 4
+
+# Don't keep empty lines at the start of any block
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# The target for the format style
+Language: Cpp
+
+# A regular expression matching macros that start a block
+MacroBlockBegin: ''
+
+# A regular expression matching macros that end a block
+MacroBlockEnd:   ''
+
+# Maximum empty consecutive lines to keep
+MaxEmptyLinesToKeep: 1
+
+# Don’t indent in namespaces
+NamespaceIndentation: None
+
+# I don't know what this ones mean
+#ObjCBlockIndentWidth: 2
+#ObjCSpaceAfterProperty: false
+#ObjCSpaceBeforeProtocolList: false
+
+#Penalty breaks for some limits
+PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 200
+
+# Align pointer on the left side
+PointerAlignment: Left
+
+# No space after c style cast
+SpaceAfterCStyleCast: false
+
+# Space vefore assigment operators
+SpaceBeforeAssignmentOperators: true
+
+# Question : Maybe never. For now control statements ( e.g. if(x) and if (x) )
+SpaceBeforeParens: ControlStatements
+
+# Question : Maybe true. No space inserted into ()
+SpaceInEmptyParentheses: false
+
+# Spaces before comments ( only for // commets )
+SpacesBeforeTrailingComments: 2
+
+# No spaces insered after < and before >
+SpacesInAngles:  false
+
+# Question : what are container literals ? Spaces are inserted inside container literals
+SpacesInContainerLiterals: true
+
+# No spaces inserted into c style casts
+SpacesInCStyleCastParentheses: false
+
+# No spaces after ( and before )
+SpacesInParentheses: false
+
+# No spaces after [ and before ]
+SpacesInSquareBrackets: false
+
+# Format compatible with this standard . Auto detects based on the input.
+Standard: Auto
+
+# The number of coluns used for tab stops.
+TabWidth: 4
+
+# The way to use tab characters. Never use tab
+UseTab: Never
