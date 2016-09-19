@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/MenuIt.qml</file>
+        <file>qml/MenuModel.qml</file>
+        <file>qml/MenuRectangle.qml</file>
+        <file>qml/SubMenuIt.qml</file>
+        <file>qml/SubMenuModel.qml</file>
+    </qresource>
+</RCC>
